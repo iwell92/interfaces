@@ -10,11 +10,11 @@ public class RentalService {
 	
 	private TaxService taxServices;
 
-	public RentalService(Double pricePerDay, Double pricePerHour, TaxService taxServices) {
+	public RentalService(Double pricePerDay, Double pricePerHour, TaxService taxService) {
 		super();
 		this.pricePerDay = pricePerDay;
 		this.pricePerHour = pricePerHour;
-		this.taxServices = taxServices;
+		this.taxServices = taxService;
 	}
 	
 	public void processInvoice(CarRental carRental) {
